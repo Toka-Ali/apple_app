@@ -15,7 +15,7 @@ class _TwitterScreenState extends State<TwitterScreen> {
     return   Scaffold(
       appBar: AppBar(
       ),
-      body: WebView(
+      body: const WebView(
         initialUrl: "https://pub.dev/packages/flutter_webview_plugin",
       ),
     );

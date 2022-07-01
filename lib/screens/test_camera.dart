@@ -1,5 +1,3 @@
-
-
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -13,8 +11,10 @@ class CameraScreenTest extends StatefulWidget {
 }
 
 class _CameraScreenState extends State<CameraScreenTest> {
-    File? image;
-
+  File? image;
+  /////////////////// initialize list of image /////////////
+  List<File> images = [];
+  final picker = ImagePicker();
   final imagePicker = ImagePicker();
   void getImage() async{
     XFile? pickedFile = await imagePicker.pickImage(source: ImageSource.camera);
@@ -29,9 +29,30 @@ class _CameraScreenState extends State<CameraScreenTest> {
 
     setState(() {
       image = newImage;
+      print(newImage.toString()+"fffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
+      /////////////// add image to list /////////////////////////
+      _listImage(newImage);
+      //images.add(newImage);
       print(newImage.path + ' test');
     });
+
   }
+  File? userAvatar;
+  _getImage() async{
+    final pickedUserAvatar  =await picker.getImage(source: ImageSource.camera);
+    pickedUserAvatar == null ? print('select Image') : userAvatar = File(pickedUserAvatar.path);
+    print(userAvatar!.path);
+    setState(() {
+      images.add(userAvatar!);
+    });
+
+  }
+  _listImage(File image){
+    setState(() {
+      images.add(image);
+    });
+  }
+
   // {
   //    XFile? pick = await ImagePicker().pickImage(source:
   //        ImageSource.camera,
@@ -70,7 +91,19 @@ class _CameraScreenState extends State<CameraScreenTest> {
           ),),
 
       ),
-      body: ListView(
+      body:
+      GridView.builder(
+        itemCount: images.length,
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            crossAxisSpacing: 4.0,
+            mainAxisSpacing: 4.0
+        ),
+        itemBuilder: (BuildContext context, int index){
+          return Image.file(images[index]);
+        },
+      ),
+      /*ListView(
         children: [
           const SizedBox(height: 50,),
           image !=null ?
@@ -78,14 +111,15 @@ class _CameraScreenState extends State<CameraScreenTest> {
               : const Center(child:
           Text("no photo selected")),
         ],
-      ),
+      ),*/
       floatingActionButton: FloatingActionButton(
-        onPressed: getImage,
+        onPressed: _getImage,
         child: const Icon(Icons.camera),
         backgroundColor: Colors.green,
       ),
     );
   }
 }
+
 
 

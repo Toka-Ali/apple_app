@@ -15,8 +15,8 @@ class _InstegramScreenState extends State<InstegramScreen> {
     return   Scaffold(
       appBar: AppBar(
       ),
-      body: WebView(
-        initialUrl: "https://pub.dev/packages/flutter_webview_plugin",
+      body: const WebView(
+        initialUrl: "https://www.instagram.com/explore/tags/applescabdisease/",
       ),
     );
   }

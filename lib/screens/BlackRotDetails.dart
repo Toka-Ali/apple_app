@@ -55,7 +55,7 @@ class BlackRotDetails extends StatelessWidget {
                 height: 10,
               ),
               const Text(
-                "Black rot is an apple disease that affects fruit, leaves, and bark caused by the fungus Botryosphaeria Obedusa. It can also jump into healthy tissues on pear or quince trees, but it is usually a secondary fungus of weak or dead tissue on other plants. Begin checking apple trees for signs of infection about a week after the petals have fallen from the apple blossoms. Early symptoms are often limited to leaf symptoms such as purple spots on the upper leaf surfaces. As these spots age, the edges remain purple, but the centers dry out and turn yellow to brown. Over time, the spots expand, and severely affected leaves fall from the tree. Affected branches or limbs will show distinct red-brown sunken areas that expand each year. Fruit infection is the most destructive form of this pathogen and begins with infected flowers before the fruits expand. When the fruits are small and green, you will notice red spots or purple pustules that swell like the fruit. Ripe fruit lesions take on the appearance of a bull's-eye, with brown and black areas extending outward from a central point on each lesion. Black rot usually causes flower end rot or mummification of fruits on the tree.",
+                "The fungus, Physalospora obtusa (Botryosphaeia obtusa), causes black rot. Highly susceptible crabapple varieties may lose most of their leaves, which weakens the tree and reduces flowering the next year. The disease begins on the leaf as a purple speck that enlarges to have a brown or tan center, which looks like a frog’s eye. Heavily infected leaves drop from the tree. Limbs may have slightly sunken, reddish brown areas called cankers. Infected fruits begin with tiny red or purple spots occurring opposite the stem end. After a few weeks the spots enlarge and have alternating zones of black and brown. The rot eventually affects the entire fruit, which wrinkles, mummifies and often remains attached to the tree.",
                 style: TextStyle(
                   fontSize: 18,
                 ),
@@ -64,7 +64,7 @@ class BlackRotDetails extends StatelessWidget {
                 height: 10,
               ),
               const Text(
-                "Black Rot Control",
+                "Prevention",
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
@@ -74,7 +74,26 @@ class BlackRotDetails extends StatelessWidget {
                 height: 10,
               ),
               const Text(
-                "Treatment for black mold on apple trees begins with disinfection. Since fungal spores overwinter on fallen leaves, mummified fruit, dead bark, and cankers, it is important to clean all fallen debris and dead fruit away from the tree. During the winter, check for red sores and remove them by clipping them or trimming the affected ends at least 6 inches (15 cm) behind the wound. Destroy all infected tissue immediately and watch for signs of new infection. Once you control black rot in your tree and you are back to harvesting healthy fruits, be sure to remove any fruits that are infected or infested by insects to avoid re-infection. Although general-purpose fungicides, such as copper-based sprays and lime sulfur, can be used to control black mold, nothing will improve black apple rot like removing all sources of spores.",
+                "Treating black rot on apple trees starts with sanitation. Since fungal spores overwinter on fallen leaves, mummified fruits, dead bark, and cankers, it’s important to keep all the fallen debris and dead fruit cleaned up and away from the tree. During the winter, check for red cankers and remove them by cutting them out or pruning away the affected limbs at least 6 inches (15 cm.) beyond the wound. Destroy all infected tissue immediately and keep a watchful eye out for new signs of infection. Once black rot disease is under control in your tree and you’re again harvesting healthy fruits, make sure to remove any injured or insect-invaded fruits to avoid re-infection. Although general-purpose fungicides, like copper-based sprays and lime sulfur, can be used to control black rot, nothing will improve apple black rot like removing all sources of spores.",
+                style: TextStyle(
+                  fontSize: 18.0,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Text(
+                "Treatment",
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Text(
+                "Remove and discard dead branches and diseased fruit, called mummies, where the fungus overwinters. The fungicides captan and thiophanate-methyl are effective if applied early and at regular intervals throughout the season.",
                 style: TextStyle(
                   fontSize: 18.0,
                 ),

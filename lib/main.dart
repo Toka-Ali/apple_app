@@ -1,7 +1,5 @@
-import 'package:farghaly/screens/bloc/cubit.dart';
 import 'package:farghaly/weather/cubit/cubit.dart';
 import 'package:farghaly/weather/dio/dio_helper.dart';
-import 'package:farghaly/weather/weather_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'screens/home_page.dart';

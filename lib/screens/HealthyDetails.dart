@@ -23,24 +23,61 @@ class HealthyDetails extends StatelessWidget {
           ),),
 
       ),
-      body: Column(
-        children: [
-          Container(
-            height: 300,
-            width: double.infinity,
-            decoration: const BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/tree.jpg"),
-                fit: BoxFit.cover,
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                height: 300,
+                width: double.infinity,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage("assets/images/tree.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
-            ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Text(
+                "Healthy Details",
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Text("",
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Text(
+                "Healthy Control",
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Text("",
+                style: TextStyle(
+                  fontSize: 18.0,
+                ),
+              ),
+            ],
           ),
-          const Text("healthy details 4444444444444444444",
-            style: TextStyle(
-              fontSize: 30,
-            ),),
-
-        ],
+        ),
       ),
     );
   }
