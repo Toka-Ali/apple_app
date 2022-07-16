@@ -1,11 +1,11 @@
 import 'package:farghaly/screens/apple_screen.dart';
+import 'package:farghaly/screens/test_camera.dart';
 import 'package:farghaly/weather/cubit/cubit.dart';
 import 'package:farghaly/weather/cubit/states.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../screens/test_camera.dart';
 import '../weather/weather_screen.dart';
 import 'face_screen.dart';
 import 'insta_screen.dart';
@@ -166,7 +166,7 @@ class HomePage extends StatelessWidget {
                                             context,
                                             MaterialPageRoute(
                                               builder: (context) =>
-                                                  const CameraScreenTest(),
+                                                  const TfliteModel(),
                                             ),
                                           );
                                         },
