@@ -22,6 +22,9 @@ class WeatherScreen extends StatelessWidget {
           AppCubit2 cubit = AppCubit2.get(context);
           TextEditingController cityController = TextEditingController();
           return Scaffold(
+              appBar: AppBar(
+              backgroundColor: Color.fromRGBO(6, 31, 113, 1.0),
+              title: const Text("Weather"),),
             body: state is! GetCurrentWeatherLoadingState
                 ? Stack(
               children: [

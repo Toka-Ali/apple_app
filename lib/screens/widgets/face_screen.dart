@@ -5,7 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-import 'bloc/cubit.dart';
+import '../bloc/cubit.dart';
+
+
 class FaceBookScreen extends StatefulWidget {
   const FaceBookScreen({Key? key}) : super(key: key);
 

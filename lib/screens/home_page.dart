@@ -1,30 +1,36 @@
+
+import 'package:farghaly/camera_screen.dart';
 import 'package:farghaly/screens/apple_screen.dart';
 import 'package:farghaly/screens/test_camera.dart';
-import 'package:farghaly/weather/cubit/cubit.dart';
-import 'package:farghaly/weather/cubit/states.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../weather/weather_screen.dart';
-import 'face_screen.dart';
-import 'insta_screen.dart';
-import 'tiwter_screen.dart';
+import 'widgets/face_screen.dart';
+import 'widgets/insta_screen.dart';
+import 'widgets/tiwter_screen.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+
+  @override
   Widget build(BuildContext context) {
-    return BlocConsumer<AppCubit2, AppStates2>(
-      listener: (context, state) {},
-      builder: (context, state) {
-        var width = MediaQuery.of(context).size.width;
-        var height = MediaQuery.of(context).size.height;
-        AppCubit2 cubit = AppCubit2.get(context);
+    // return BlocConsumer<AppCubit2, AppStates2>(
+    //   listener: (context, state) {},
+    //   builder: (context, state) {
+    //     var width = MediaQuery.of(context).size.width;
+    //     var height = MediaQuery.of(context).size.height;
+    //     AppCubit2 cubit = AppCubit2.get(context);
         return Scaffold(
           body: Row(
             children: [
+              // like a drawer
               Container(
                 decoration: const BoxDecoration(
                   color: Colors.green,
@@ -120,6 +126,7 @@ class HomePage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: ListView(
                     children: [
+                      //search bar
                       TextFormField(
                         decoration: const InputDecoration(
                           hintStyle: TextStyle(
@@ -166,7 +173,7 @@ class HomePage extends StatelessWidget {
                                             context,
                                             MaterialPageRoute(
                                               builder: (context) =>
-                                                  const TfliteModel(),
+                                                  const WomenScreen(),
                                             ),
                                           );
                                         },
@@ -339,7 +346,6 @@ class HomePage extends StatelessWidget {
             ],
           ),
         );
-      },
-    );
-  }
+      }
 }
+

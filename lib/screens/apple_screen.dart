@@ -1,7 +1,7 @@
-import 'package:farghaly/screens/BlackRotDetails.dart';
-import 'package:farghaly/screens/RustDetails.dart';
-import 'package:farghaly/screens/HealthyDetails.dart';
-import 'package:farghaly/screens/ScabDetails.dart';
+import 'package:farghaly/screens/Diseases%20Details/BlackRotDetails.dart';
+import 'package:farghaly/screens/Diseases%20Details/HealthyDetails.dart';
+import 'package:farghaly/screens/Diseases%20Details/RustDetails.dart';
+import 'package:farghaly/screens/Diseases%20Details/ScabDetails.dart';
 import 'package:flutter/material.dart';
 class AppleScreen extends StatelessWidget {
   const AppleScreen({Key? key}) : super(key: key);
